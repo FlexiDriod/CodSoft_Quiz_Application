@@ -205,8 +205,7 @@ List<PhpQuiz> questions = [
     ],
   ),
   PhpQuiz(
-    question:
-        'Who is known as the father of PHP?',
+    question: 'Who is known as the father of PHP?',
     correctAnswerIndex: 2,
     answers: [
       'Drek Kolkevi',

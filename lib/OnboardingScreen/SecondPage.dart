@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -54,19 +53,19 @@ class SecondPage extends StatelessWidget {
               child: RichText(
                 textAlign: TextAlign.center,
                 text: const TextSpan(
-                    text: "We have assembled a powerhouse of MCQs on\nall the popular programming languages,\nincluding JAVA, C++, PYTHON, PHP, etc.\n\nwe're here to challenge your intellect and ignite your competitive spirit. Step up, answer swiftly, and show the world your coding prowess!",
-                    style: TextStyle(
-                      height: 1.3,
-                      letterSpacing: 1.0,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.white,
-                      fontSize: 16.0,
-                    ),
+                  text:
+                      "We have assembled a powerhouse of MCQs on\nall the popular programming languages,\nincluding JAVA, C++, PYTHON, PHP, etc.\n\nwe're here to challenge your intellect and ignite your competitive spirit. Step up, answer swiftly, and show the world your coding prowess!",
+                  style: TextStyle(
+                    height: 1.3,
+                    letterSpacing: 1.0,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white,
+                    fontSize: 16.0,
+                  ),
                 ),
               ),
             ),
           ),
-
         ],
       ),
     );

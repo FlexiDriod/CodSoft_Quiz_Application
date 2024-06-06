@@ -257,7 +257,8 @@ class _LinuxQuizScreenState extends State<LinuxQuizScreen> {
                                   answers: question.answers[index],
                                   isSelected: selectedAnswerIndex == index,
                                   selectedAnswerIndex: selectedAnswerIndex,
-                                  correctAnswerIndex: question.correctAnswerIndex,
+                                  correctAnswerIndex:
+                                      question.correctAnswerIndex,
                                 ),
                               );
                             },
@@ -276,7 +277,8 @@ class _LinuxQuizScreenState extends State<LinuxQuizScreen> {
                                   child: ElevatedButton(
                                     onPressed: () {
                                       selectedAnswerIndex != null
-                                          ? Navigator.of(context).pushReplacement(
+                                          ? Navigator.of(context)
+                                              .pushReplacement(
                                               MaterialPageRoute(
                                                 builder: (_) => ResultScreen(
                                                   score: score,

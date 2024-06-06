@@ -96,14 +96,14 @@ class _CppQuizScreenState extends State<CppQuizScreen> {
         systemNavigationBarColor: Color(0xff060870),
         systemNavigationBarDividerColor: Color(0xff000000),
         systemNavigationBarIconBrightness: Brightness.light,
-    ),
+      ),
       child: Scaffold(
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
               children: [
                 Container(
-                 padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   width: Get.width,
                   // fill_parent
                   height: Get.height,
@@ -257,7 +257,8 @@ class _CppQuizScreenState extends State<CppQuizScreen> {
                                   answers: question.answers[index],
                                   isSelected: selectedAnswerIndex == index,
                                   selectedAnswerIndex: selectedAnswerIndex,
-                                  correctAnswerIndex: question.correctAnswerIndex,
+                                  correctAnswerIndex:
+                                      question.correctAnswerIndex,
                                 ),
                               );
                             },
@@ -276,7 +277,8 @@ class _CppQuizScreenState extends State<CppQuizScreen> {
                                   child: ElevatedButton(
                                     onPressed: () {
                                       selectedAnswerIndex != null
-                                          ? Navigator.of(context).pushReplacement(
+                                          ? Navigator.of(context)
+                                              .pushReplacement(
                                               MaterialPageRoute(
                                                 builder: (_) => ResultScreen(
                                                   score: score,

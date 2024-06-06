@@ -17,7 +17,7 @@ class CategoryListView extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(70),
         child: AppBar(
-          systemOverlayStyle:const SystemUiOverlayStyle(
+          systemOverlayStyle: const SystemUiOverlayStyle(
             statusBarColor: Color(0xff060870),
             // Change the status bar color
             statusBarIconBrightness: Brightness.light,

@@ -26,7 +26,7 @@ class ResultScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: AnnotatedRegion(
-          value: SystemUiOverlayStyle(
+          value: const SystemUiOverlayStyle(
             // Change the status bar color
             statusBarIconBrightness: Brightness.light,
             // Change the status bar icons' color

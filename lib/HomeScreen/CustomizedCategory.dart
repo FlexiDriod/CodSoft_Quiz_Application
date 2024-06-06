@@ -29,18 +29,18 @@ class CustomizedCategory extends StatelessWidget {
                     )),
                 GestureDetector(
                   onTap: () {
-                    Get.to( () => CategoryListView(categoryList: categoryList));
+                    Get.to(() => CategoryListView(categoryList: categoryList));
                   },
                   child: Container(
                     color: Colors.pink,
                     child: const Padding(
                       // Add padding for better spacing
-                      padding: EdgeInsets.symmetric(
-                          horizontal: 12.0, vertical: 5.0),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 12.0, vertical: 5.0),
                       child: Text(
                         "View All",
                         style: TextStyle(
-                          fontFamily: 'Nunita',
+                            fontFamily: 'Nunita',
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.w900),

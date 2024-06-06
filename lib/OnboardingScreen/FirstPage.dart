@@ -29,18 +29,18 @@ class FirstPage extends StatelessWidget {
             height: 40,
           ),
           SizedBox(
-              width: Get.width,
-              child: Center(
-                child: RichText(
-                  text: const TextSpan(
-                      text: "Welcome TechQuizzer, future tech genius!",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w900,
-                        color: Colors.black,
-                        fontSize: 20.0,
-                      )),
-                ),
+            width: Get.width,
+            child: Center(
+              child: RichText(
+                text: const TextSpan(
+                    text: "Welcome TechQuizzer, future tech genius!",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      color: Colors.black,
+                      fontSize: 20.0,
+                    )),
               ),
+            ),
           ),
           /* */
           const SizedBox(
@@ -53,19 +53,19 @@ class FirstPage extends StatelessWidget {
               child: RichText(
                 textAlign: TextAlign.center,
                 text: const TextSpan(
-                    text: "Whether you\'re a beginner or a seasoned pro,\nour quizzes will put your knowledge to the test.\n\nyou'll level up your knowledge.\nLet\'s begin this exciting journey and\nsee how high you can climb!",
-                    style: TextStyle(
-                      height: 1.3,
-                      letterSpacing: 0.8,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.white,
-                      fontSize: 16.0,
-                    ),
+                  text:
+                      "Whether you\'re a beginner or a seasoned pro,\nour quizzes will put your knowledge to the test.\n\nLet\'s begin this exciting journey and\nsee how high you can climb!",
+                  style: TextStyle(
+                    height: 1.3,
+                    letterSpacing: 0.8,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white,
+                    fontSize: 16.0,
+                  ),
                 ),
               ),
             ),
           ),
-
         ],
       ),
     );

@@ -259,7 +259,8 @@ class _PhpQuizScreenState extends State<PhpQuizScreen> {
                                   answers: question.answers[index],
                                   isSelected: selectedAnswerIndex == index,
                                   selectedAnswerIndex: selectedAnswerIndex,
-                                  correctAnswerIndex: question.correctAnswerIndex,
+                                  correctAnswerIndex:
+                                      question.correctAnswerIndex,
                                 ),
                               );
                             },
@@ -278,7 +279,8 @@ class _PhpQuizScreenState extends State<PhpQuizScreen> {
                                   child: ElevatedButton(
                                     onPressed: () {
                                       selectedAnswerIndex != null
-                                          ? Navigator.of(context).pushReplacement(
+                                          ? Navigator.of(context)
+                                              .pushReplacement(
                                               MaterialPageRoute(
                                                 builder: (_) => ResultScreen(
                                                   score: score,

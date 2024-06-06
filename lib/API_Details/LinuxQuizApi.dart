@@ -42,8 +42,7 @@ List<LinuxQuiz> questions = [
     ],
   ),
   LinuxQuiz(
-    question:
-        'What command displays disk space usage information?',
+    question: 'What command displays disk space usage information?',
     correctAnswerIndex: 2,
     answers: [
       'ps',
@@ -145,8 +144,7 @@ List<LinuxQuiz> questions = [
     ],
   ),
   LinuxQuiz(
-    question:
-        'What command displays the contents of a file in reverse order?',
+    question: 'What command displays the contents of a file in reverse order?',
     correctAnswerIndex: 2,
     answers: [
       'tail',
@@ -186,8 +184,7 @@ List<LinuxQuiz> questions = [
     ],
   ),
   LinuxQuiz(
-    question:
-        'What command changes the owner of a file or directory in Linux?',
+    question: 'What command changes the owner of a file or directory in Linux?',
     correctAnswerIndex: 0,
     answers: [
       'chown',

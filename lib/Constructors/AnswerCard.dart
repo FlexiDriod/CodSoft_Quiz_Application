@@ -30,7 +30,11 @@ class AnswerCard extends StatelessWidget {
               height: 90,
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               decoration: BoxDecoration(
-                color: correctAns ? Colors.green : wrongAns ? Colors.red : Colors.red,
+                color: correctAns
+                    ? Colors.green
+                    : wrongAns
+                        ? Colors.red
+                        : Colors.red,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(
                   color: correctAns
@@ -43,7 +47,7 @@ class AnswerCard extends StatelessWidget {
               child: Row(
                 children: [
                   Expanded(
-                    child:  RichText(
+                    child: RichText(
                       textAlign: TextAlign.center,
                       text: TextSpan(
                         text: answers,
@@ -94,5 +98,4 @@ class AnswerCard extends StatelessWidget {
             ),
     );
   }
-
 }

@@ -53,8 +53,7 @@ List<PgSqlQuiz> questions = [
     ],
   ),
   PgSqlQuiz(
-    question:
-        'Purpose of the \"WHERE\" clause in a SELECT statement: ',
+    question: 'Purpose of the \"WHERE\" clause in a SELECT statement: ',
     correctAnswerIndex: 1,
     answers: [
       'To specify the columns to be selected',
@@ -74,8 +73,7 @@ List<PgSqlQuiz> questions = [
     ],
   ),
   PgSqlQuiz(
-    question:
-        'Purpose of the \"GROUP BY\" clause in a SELECT statement:',
+    question: 'Purpose of the \"GROUP BY\" clause in a SELECT statement:',
     correctAnswerIndex: 3,
     answers: [
       'To delete duplicate rows from the result set',
@@ -95,8 +93,7 @@ List<PgSqlQuiz> questions = [
     ],
   ),
   PgSqlQuiz(
-    question:
-        'Purpose of the "ORDER BY" clause in a SELECT statement:',
+    question: 'Purpose of the "ORDER BY" clause in a SELECT statement:',
     correctAnswerIndex: 0,
     answers: [
       'To sort the result set based on one or more columns',
@@ -116,8 +113,7 @@ List<PgSqlQuiz> questions = [
     ],
   ),
   PgSqlQuiz(
-    question:
-        'Purpose of the "HAVING" clause in a SELECT statement:',
+    question: 'Purpose of the "HAVING" clause in a SELECT statement:',
     correctAnswerIndex: 2,
     answers: [
       'To update records in a table',
@@ -137,8 +133,7 @@ List<PgSqlQuiz> questions = [
     ],
   ),
   PgSqlQuiz(
-    question:
-        'Purpose of the "LIMIT" clause in a SELECT statement:',
+    question: 'Purpose of the "LIMIT" clause in a SELECT statement:',
     correctAnswerIndex: 1,
     answers: [
       'To order the result set',
@@ -199,8 +194,7 @@ List<PgSqlQuiz> questions = [
     ],
   ),
   PgSqlQuiz(
-    question:
-        'What is the purpose of the "TRUNCATE TABLE" statement?',
+    question: 'What is the purpose of the "TRUNCATE TABLE" statement?',
     correctAnswerIndex: 2,
     answers: [
       'To update records in a table',

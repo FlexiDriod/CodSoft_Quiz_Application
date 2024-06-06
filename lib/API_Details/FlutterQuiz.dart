@@ -72,14 +72,13 @@ List<FlutterQuiz> questions = [
     ],
   ),
   FlutterQuiz(
-    question:
-        'The first alpha version of Flutter was released in _____?',
+    question: 'The first alpha version of Flutter was released in _____?',
     correctAnswerIndex: 3,
     answers: [
-    '2016',
-    '2008',
-    '2010',
-    '2017',
+      '2016',
+      '2008',
+      '2010',
+      '2017',
     ],
   ),
   FlutterQuiz(
@@ -93,8 +92,7 @@ List<FlutterQuiz> questions = [
     ],
   ),
   FlutterQuiz(
-    question:
-        'What is the purpose of the "pubspec.yaml" file?',
+    question: 'What is the purpose of the "pubspec.yaml" file?',
     correctAnswerIndex: 0,
     answers: [
       'To manage dependencies and configuration for the Flutter project',
@@ -124,8 +122,7 @@ List<FlutterQuiz> questions = [
     ],
   ),
   FlutterQuiz(
-    question:
-        'What type of animation allows to represent real-world behavior?',
+    question: 'What type of animation allows to represent real-world behavior?',
     correctAnswerIndex: 0,
     answers: [
       'Physics-based',
@@ -135,8 +132,7 @@ List<FlutterQuiz> questions = [
     ],
   ),
   FlutterQuiz(
-    question:
-        'What command is use to compile Flutter app in release mode?',
+    question: 'What command is use to compile Flutter app in release mode?',
     correctAnswerIndex: 3,
     answers: [
       'Flutter run release',
@@ -209,8 +205,7 @@ List<FlutterQuiz> questions = [
     ],
   ),
   FlutterQuiz(
-    question:
-        'Everything is a widget in Flutter. True or False?',
+    question: 'Everything is a widget in Flutter. True or False?',
     correctAnswerIndex: 0,
     answers: [
       'True',

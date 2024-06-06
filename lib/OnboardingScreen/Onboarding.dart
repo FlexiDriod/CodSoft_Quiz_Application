@@ -15,9 +15,9 @@ class OnBoardingScreen extends StatelessWidget {
       body: Stack(alignment: Alignment.center, children: [
         LiquidSwipe(
           pages: obController.pages,
-          slideIconWidget: const Icon(Icons.arrow_back_ios, size: 30),
+          slideIconWidget: const Icon(Icons.arrow_back_ios, size: 20),
           enableSideReveal: true,
-          positionSlideIcon: 0.7,
+          positionSlideIcon: 0.5,
           liquidController: obController.liquidController,
           onPageChangeCallback: obController.onPageChangeCallBack,
         ),

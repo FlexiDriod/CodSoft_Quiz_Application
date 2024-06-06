@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -52,11 +51,12 @@ class ThirdPage extends StatelessWidget {
             child: Align(
               alignment: Alignment.center,
               child: Padding(
-                padding:  const EdgeInsets.only(left: 45.0, right: 45.0),
+                padding: const EdgeInsets.only(left: 45.0, right: 45.0),
                 child: RichText(
                   textAlign: TextAlign.center,
                   text: const TextSpan(
-                      text: "Our app takes you to the next level\nby providing you with comprehensive feedback on your performance.\n\nOur app believes in providing you with comprehensive results that offer a deep dive into your quiz performance.",
+                      text:
+                          "Our app takes you to the next level\nby providing you with comprehensive feedback on your performance.\n\nOur app believes in providing you with comprehensive results that offer a deep dive into your quiz performance.",
                       style: TextStyle(
                         height: 1.3,
                         letterSpacing: 1.0,
@@ -68,7 +68,6 @@ class ThirdPage extends StatelessWidget {
               ),
             ),
           ),
-
         ],
       ),
     );

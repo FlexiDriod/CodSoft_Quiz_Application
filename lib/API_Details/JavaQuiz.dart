@@ -22,8 +22,7 @@ List<JavaQuiz> questions = [
     ],
   ),
   JavaQuiz(
-    question:
-        'Which operator is used for conditional assignment in Java?',
+    question: 'Which operator is used for conditional assignment in Java?',
     correctAnswerIndex: 3,
     answers: [
       '=',
@@ -63,8 +62,7 @@ List<JavaQuiz> questions = [
     ],
   ),
   JavaQuiz(
-    question:
-        'If "5 = 10", Evaluate the output:\nx++ + ++x - --x - x--',
+    question: 'If "5 = 10", Evaluate the output:\nx++ + ++x - --x - x--',
     correctAnswerIndex: 1,
     answers: [
       '3',
@@ -84,8 +82,7 @@ List<JavaQuiz> questions = [
     ],
   ),
   JavaQuiz(
-    question:
-        'Evaluate the output:\nSystem.out.println(3 * 0.1 == 0.3);',
+    question: 'Evaluate the output:\nSystem.out.println(3 * 0.1 == 0.3);',
     correctAnswerIndex: 1,
     answers: [
       'true',
@@ -148,12 +145,7 @@ List<JavaQuiz> questions = [
   JavaQuiz(
     question: ' ____ is used to find and fix bugs in the Java programs.',
     correctAnswerIndex: 3,
-    answers: [
-      "JVM",
-      "JRE",
-      "JDK",
-      "JDB"
-    ],
+    answers: ["JVM", "JRE", "JDK", "JDB"],
   ),
   JavaQuiz(
     question: 'What is the purpose of the "interface" keyword in Java?',
@@ -166,14 +158,13 @@ List<JavaQuiz> questions = [
     ],
   ),
   JavaQuiz(
-    question:
-        'What is the return type of the hashCode() in the Object class?',
+    question: 'What is the return type of the hashCode() in the Object class?',
     correctAnswerIndex: 1,
     answers: [
-    "Object",
-    "int",
-    "long",
-    "void",
+      "Object",
+      "int",
+      "long",
+      "void",
     ],
   ),
   JavaQuiz(
@@ -208,8 +199,7 @@ List<JavaQuiz> questions = [
     ],
   ),
   JavaQuiz(
-    question:
-        'Which of the following is true about the anonymous inner class?',
+    question: 'Which of the following is true about the anonymous inner class?',
     correctAnswerIndex: 0,
     answers: [
       "It has only methods",

@@ -15,9 +15,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
-
-
   @override
   Widget build(BuildContext context) {
     return AnnotatedRegion(
@@ -27,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
         statusBarIconBrightness: Brightness.light,
         // Change the status bar icons' color
         systemNavigationBarColor: Color(0xff060870),
-         systemNavigationBarDividerColor: Color(0xff000000),
+        systemNavigationBarDividerColor: Color(0xff000000),
         systemNavigationBarIconBrightness: Brightness.light,
       ),
       child: Scaffold(
@@ -57,5 +54,4 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-
 }

@@ -253,11 +253,11 @@ class _JavaQuizScreenState extends State<JavaQuizScreen> {
                               ),
                             ),
                           ),
-      
+
                           const SizedBox(
                             height: 50,
                           ),
-      
+
                           ListView.builder(
                             shrinkWrap: true,
                             itemCount: question.answers.length,
@@ -271,18 +271,19 @@ class _JavaQuizScreenState extends State<JavaQuizScreen> {
                                   answers: question.answers[index],
                                   isSelected: selectedAnswerIndex == index,
                                   selectedAnswerIndex: selectedAnswerIndex,
-                                  correctAnswerIndex: question.correctAnswerIndex,
+                                  correctAnswerIndex:
+                                      question.correctAnswerIndex,
                                 ),
                               );
                             },
                           ),
-      
+
                           const SizedBox(
                             height: 40,
                           ),
-      
+
                           // Next Button & Finish Button
-      
+
                           isLastQuestion
                               ? SizedBox(
                                   width: 150.0,
@@ -290,7 +291,8 @@ class _JavaQuizScreenState extends State<JavaQuizScreen> {
                                   child: ElevatedButton(
                                     onPressed: () {
                                       selectedAnswerIndex != null
-                                          ? Navigator.of(context).pushReplacement(
+                                          ? Navigator.of(context)
+                                              .pushReplacement(
                                               MaterialPageRoute(
                                                 builder: (_) => ResultScreen(
                                                   score: score,

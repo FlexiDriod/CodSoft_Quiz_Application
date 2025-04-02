@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'API_Details/LinuxQuizApi.dart';
 
@@ -56,7 +55,7 @@ class ResultScreen extends StatelessWidget {
                       backgroundColor: Colors.redAccent[700],
                       child: IconButton(
                         onPressed: () {
-                          Get.offAllNamed("/Home");
+                          Navigator.pushReplacementNamed(context, "/Home");
                         },
                         icon: Icon(MdiIcons.close),
                       ),

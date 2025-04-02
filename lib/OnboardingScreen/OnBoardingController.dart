@@ -1,5 +1,6 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
 import 'FirstPage.dart';
@@ -7,28 +8,34 @@ import 'SecondPage.dart';
 import 'ThirdPage.dart';
 
 // Create a controller for managing the state
-class OnboardingController extends GetxController {
-  LiquidController liquidController = LiquidController();
-  RxInt currentPage = 0.obs;
+class OnBoardingController {
+  final LiquidController _liquidController = LiquidController();
+  var currentPage = 0;
 
-  List<Widget> pages = [
+  final List<Widget> pages = [
     const FirstPage(),
     const SecondPage(),
     const ThirdPage(),
   ];
 
-  void onPageChangeCallBack(int activePageIndex) {
-    currentPage.value = activePageIndex;
+  LiquidController getLiquidController(){
+    return _liquidController;
+  }
+  void onPageChangeCallBack(int page, Function updateState) {
+    currentPage = page;
+    updateState();
   }
 
-  skip() => liquidController.jumpToPage(page: 2);
+  void skip(BuildContext context) {
+    Navigator.pushReplacementNamed(context, "/Home");
+  }
 
-  animateToNextSlide() {
-    var nextPage = currentPage.value + 1;
-    if (nextPage < pages.length) {
-      liquidController.animateToPage(page: nextPage, duration: 500);
+  void animateToNextSlide(BuildContext context, Function updateState) {
+    if (currentPage < pages.length - 1) {
+      _liquidController.animateToPage(page: currentPage + 1, duration: 500);
     } else {
-      Get.offAllNamed("/Home");
+      Navigator.pushReplacementNamed(context, "/Home");
     }
+    updateState();
   }
 }

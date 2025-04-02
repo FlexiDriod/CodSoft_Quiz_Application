@@ -1,7 +1,6 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../Constructors/category.dart';
 
 class CategoryCard extends StatelessWidget {
@@ -16,21 +15,21 @@ class CategoryCard extends StatelessWidget {
       // Based on specific topic redirected to specific screen
       onTap: () {
         if (category.name == 'Linux') {
-          Get.toNamed("/LinuxScreen");
+          Navigator.pushReplacementNamed(context,"/LinuxScreen");
         } else if (category.name == 'C++') {
-          Get.toNamed("/CppQuizScreen");
+          Navigator.pushReplacementNamed(context,"/CppQuizScreen");
         } else if (category.name == 'Java') {
-          Get.toNamed("/JavaQuizScreen");
+          Navigator.pushReplacementNamed(context,"/JavaQuizScreen");
         } else if (category.name == 'Python') {
-          Get.toNamed("/PythonQuizScreen");
+          Navigator.pushReplacementNamed(context,"/PythonQuizScreen");
         } else if (category.name == 'Dart') {
-          Get.toNamed("/DartQuizScreen");
+          Navigator.pushReplacementNamed(context,"/DartQuizScreen");
         } else if (category.name == 'Flutter') {
-          Get.toNamed("/FlutterQuizScreen");
+          Navigator.pushReplacementNamed(context,"/FlutterQuizScreen");
         } else if (category.name == 'PostgresSQL') {
-          Get.toNamed("/PgSQLQuizScreen");
+          Navigator.pushReplacementNamed(context,"/PgSQLQuizScreen");
         } else if (category.name == 'PHP') {
-          Get.toNamed("/PhpQuizScreen");
+          Navigator.pushReplacementNamed(context,"/PhpQuizScreen");
         }
       },
       child: Container(

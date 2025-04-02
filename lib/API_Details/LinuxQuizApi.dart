@@ -52,7 +52,7 @@ List<LinuxQuiz> questions = [
     ],
   ),
   LinuxQuiz(
-    question: 'What is the purpose of the \"sudo\" command?',
+    question: 'What is the purpose of the "sudo" command?',
     correctAnswerIndex: 2,
     answers: [
       'To create an empty file or update the access and modification times of a file',
@@ -62,7 +62,7 @@ List<LinuxQuiz> questions = [
     ],
   ),
   LinuxQuiz(
-    question: 'What is the function of the \"tar\" command?',
+    question: 'What is the function of the "tar" command?',
     correctAnswerIndex: 3,
     answers: [
       'To concatenate and display files',
@@ -93,7 +93,7 @@ List<LinuxQuiz> questions = [
     ],
   ),
   LinuxQuiz(
-    question: 'What is the purpose of the \"cd\" command in Linux?',
+    question: 'What is the purpose of the "cd" command in Linux?',
     correctAnswerIndex: 1,
     answers: [
       'To create a new directory',

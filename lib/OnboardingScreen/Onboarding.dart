@@ -1,32 +1,55 @@
+// ignore_for_file: unnecessary_new
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'OnBoardingController.dart';
 
-class OnBoardingScreen extends StatelessWidget {
+class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
+  
+  @override
+  OnBoardingScreenState createState() => OnBoardingScreenState();
+
+}
+
+class OnBoardingScreenState extends State<OnBoardingScreen>{
+
+  late OnBoardingController obController;
+  int currentPage = 0;
+
+ @override
+  void initState() {
+    super.initState();
+    obController = new OnBoardingController();
+  }
+
+  void updateState() {
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
-    OnboardingController obController = Get.put(OnboardingController());
+    final double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Stack(alignment: Alignment.center, children: [
+
         LiquidSwipe(
           pages: obController.pages,
           slideIconWidget: const Icon(Icons.arrow_back_ios, size: 20),
           enableSideReveal: true,
           positionSlideIcon: 0.5,
-          liquidController: obController.liquidController,
-          onPageChangeCallback: obController.onPageChangeCallBack,
+          liquidController: obController.getLiquidController(),
+          onPageChangeCallback: (index) => obController.onPageChangeCallBack(index, updateState),
         ),
 
         // Arrow Button
         Positioned(
           bottom: 60,
           child: OutlinedButton(
-            onPressed: () => obController.animateToNextSlide(),
+            onPressed: () => obController.animateToNextSlide(context, updateState),
             style: ElevatedButton.styleFrom(
               side: const BorderSide(color: Colors.black12),
               shape: const CircleBorder(),
@@ -46,10 +69,10 @@ class OnBoardingScreen extends StatelessWidget {
         ),
         // Skipped Button
         Positioned(
-            top: Get.height * 0.03,
+            top: screenHeight * 0.03,
             right: 20,
             child: TextButton(
-              onPressed: () => obController.skip(),
+              onPressed: () => obController.skip(context),
               child: const Text(
                 "Skip",
                 style: TextStyle(
@@ -60,11 +83,10 @@ class OnBoardingScreen extends StatelessWidget {
               ),
             )),
         //Animated Dots Indicator
-        Obx(
-          () => Positioned(
+        Positioned(
             bottom: 10,
             child: AnimatedSmoothIndicator(
-              activeIndex: obController.currentPage.value,
+              activeIndex: obController.currentPage,
               count: obController.pages.length,
               effect: const ExpandingDotsEffect(
                 activeDotColor: Colors.limeAccent,
@@ -74,8 +96,8 @@ class OnBoardingScreen extends StatelessWidget {
               ),
             ),
           ),
-        ),
       ]),
     );
   }
+
 }

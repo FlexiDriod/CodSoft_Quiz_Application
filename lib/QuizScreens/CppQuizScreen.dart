@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../API_Details/CplusPlus.dart';
@@ -85,6 +84,9 @@ class _CppQuizScreenState extends State<CppQuizScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+    final double screenHeight = MediaQuery.of(context).size.height;
+
     final question = questions[questionIndex];
     bool isLastQuestion = questionIndex == questions.length - 1;
     return AnnotatedRegion(
@@ -104,9 +106,9 @@ class _CppQuizScreenState extends State<CppQuizScreen> {
               children: [
                 Container(
                   padding: const EdgeInsets.all(8.0),
-                  width: Get.width,
+                  width: screenWidth,
                   // fill_parent
-                  height: Get.height,
+                  height: screenHeight,
                   // fill_parent
                   decoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
@@ -194,7 +196,7 @@ class _CppQuizScreenState extends State<CppQuizScreen> {
                                 if (value == 0) {
                                   startTimer();
                                 } else if (value == 1) {
-                                  Get.offAllNamed("/Home");
+                                  Navigator.pushReplacementNamed(context, "/Home");
                                 }
                               },
                             ),

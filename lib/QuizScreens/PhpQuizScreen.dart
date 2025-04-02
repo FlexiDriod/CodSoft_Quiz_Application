@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
+
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../API_Details/PhpQuiz.dart';
@@ -106,7 +106,7 @@ class _PhpQuizScreenState extends State<PhpQuizScreen> {
                   padding: const EdgeInsets.all(10.0),
                   width: double.infinity,
                   // fill_parent
-                  height: Get.height,
+                  height: MediaQuery.of(context).size.height,
                   // fill_parent
                   decoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
@@ -196,7 +196,7 @@ class _PhpQuizScreenState extends State<PhpQuizScreen> {
                                   // refreshQuestion();
                                   startTimer();
                                 } else if (value == 1) {
-                                  Get.offAllNamed("/Home");
+                                  Navigator.pushReplacementNamed(context, "/Home");
                                 }
                               },
                             ),

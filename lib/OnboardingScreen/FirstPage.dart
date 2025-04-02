@@ -1,11 +1,13 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
     return Container(
       color: Colors.red.shade200,
       child: Column(
@@ -16,9 +18,9 @@ class FirstPage extends StatelessWidget {
           ),
           SizedBox(
             height: 400,
-            width: Get.width,
+            width: screenWidth,
             child: Image(
-              width: Get.width,
+              width: screenWidth,
               image: const AssetImage("assets/quizonBoard4.png"),
               fit: BoxFit.cover,
               isAntiAlias: true,
@@ -29,7 +31,7 @@ class FirstPage extends StatelessWidget {
             height: 40,
           ),
           SizedBox(
-            width: Get.width,
+            width: screenWidth,
             child: Center(
               child: RichText(
                 text: const TextSpan(
@@ -47,7 +49,7 @@ class FirstPage extends StatelessWidget {
             height: 30,
           ),
           SizedBox(
-            width: Get.width,
+            width: screenWidth,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40.0),
               child: RichText(

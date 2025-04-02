@@ -1,7 +1,6 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../Constructors/category.dart';
 import 'CategoryCard.dart';
 import 'CategoryListView.dart';
@@ -29,7 +28,9 @@ class CustomizedCategory extends StatelessWidget {
                     )),
                 GestureDetector(
                   onTap: () {
-                    Get.to(() => CategoryListView(categoryList: categoryList));
+                    Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => CategoryListView(categoryList: categoryList)
+                    ));
                   },
                   child: Container(
                     color: Colors.pink,

@@ -1,5 +1,6 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class ThirdPage extends StatelessWidget {
   const ThirdPage({super.key});
@@ -16,9 +17,9 @@ class ThirdPage extends StatelessWidget {
           ),
           SizedBox(
             height: 400,
-            width: Get.width,
+            width: MediaQuery.of(context).size.width,
             child: Image(
-              width: Get.width,
+              width: MediaQuery.of(context).size.width,
               image: const AssetImage("assets/quizOnboard2.png"),
               fit: BoxFit.cover,
               isAntiAlias: true,
@@ -29,7 +30,7 @@ class ThirdPage extends StatelessWidget {
             height: 30,
           ),
           SizedBox(
-            width: Get.width,
+            width: MediaQuery.of(context).size.width,
             child: Center(
               child: RichText(
                 text: const TextSpan(
@@ -47,7 +48,7 @@ class ThirdPage extends StatelessWidget {
             height: 15,
           ),
           SizedBox(
-            width: Get.width,
+            width: MediaQuery.of(context).size.width,
             child: Align(
               alignment: Alignment.center,
               child: Padding(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class CustomizedAppBar extends StatefulWidget {
@@ -10,7 +9,7 @@ class CustomizedAppBar extends StatefulWidget {
 }
 
 class _CustomizedAppBarState extends State<CustomizedAppBar> {
-  final hintStyle = MaterialStateProperty.all(const TextStyle(
+  final hintStyle = WidgetStateProperty.all(const TextStyle(
       fontSize: 20.0, color: Colors.black, fontWeight: FontWeight.w400));
 
   @override
@@ -18,7 +17,7 @@ class _CustomizedAppBarState extends State<CustomizedAppBar> {
     return Container(
       padding: const EdgeInsets.only(top: 50.0, left: 20.0, right: 20.0),
       height: 280,
-      width: Get.width,
+      width: MediaQuery.of(context).size.width,
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20)),
@@ -83,21 +82,21 @@ class _CustomizedAppBarState extends State<CustomizedAppBar> {
                           String searchText = controller.text.toLowerCase();
                           if (searchHints.contains(searchText)) {
                             if (searchText == 'linux') {
-                              Get.toNamed("/LinuxScreen");
+                              Navigator.pushReplacementNamed(context, "/LinuxScreen");
                             } else if (searchText == 'c++') {
-                              Get.toNamed("/CppQuizScreen");
+                              Navigator.pushReplacementNamed(context, "/CppQuizScreen");
                             } else if (searchText == 'java') {
-                              Get.toNamed("/JavaQuizScreen");
+                              Navigator.pushReplacementNamed(context, "/JavaQuizScreen");
                             } else if (searchText == 'python') {
-                              Get.toNamed("/PythonQuizScreen");
+                              Navigator.pushReplacementNamed(context, "/PythonQuizScreen");
                             } else if (searchText == 'dart') {
-                              Get.toNamed("/DartQuizScreen");
+                              Navigator.pushReplacementNamed(context, "/DartQuizScreen");
                             } else if (searchText == 'flutter') {
-                              Get.toNamed("/FlutterQuizScreen");
+                              Navigator.pushReplacementNamed(context, "/FlutterQuizScreen");
                             } else if (searchText == 'postgresql') {
-                              Get.toNamed("/PgSQLQuizScreen");
+                              Navigator.pushReplacementNamed(context, "/PgSQLQuizScreen");
                             } else if (searchText == 'php') {
-                              Get.toNamed("/PhpQuizScreen");
+                              Navigator.pushReplacementNamed(context, "/PhpQuizScreen");
                             }
                           } else {
                             ScaffoldMessenger.of(context).showSnackBar(

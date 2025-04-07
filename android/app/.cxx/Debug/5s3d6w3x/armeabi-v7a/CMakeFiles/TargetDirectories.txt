@@ -1,0 +1,2 @@
+D:/Projects/flutter_projects/techquizzer/android/app/.cxx/Debug/5s3d6w3x/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Projects/flutter_projects/techquizzer/android/app/.cxx/Debug/5s3d6w3x/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -21,11 +21,21 @@ import 'SplashScreen/SplashScreen.dart';
 
 class TechQuizzerApp extends StatelessWidget{
 
+  /*
+   * This is a class property of TechQuizzerApp. 
+   * It stores the value passed from main(),
+   * it can be used inside the widget (e.g., in the routes).
+   */
   final bool showOnboarding;
   const TechQuizzerApp({super.key, required this.showOnboarding});
 
   @override
   Widget build(BuildContext context) {
+    /**
+     *& MaterialApp is the starting point of any Flutter app
+     *& that uses Material Design.
+     *& It sets up routes, themes, and more.
+     */
     return  MaterialApp(
     title: "TechQuizzer",
     initialRoute: "/Splash",
@@ -47,6 +57,10 @@ class TechQuizzerApp extends StatelessWidget{
   */
   
   Map<String, WidgetBuilder> _getRoutes() {
+    /**
+     * The 'key' is a 'String'
+     * The 'value' is a 'WidgetBuilder'
+     */
     return {
       '/Splash': (context) => SplashScreen(showOnboarding: showOnboarding),
       '/OnBoard': (context) => const OnBoardingScreen(),
@@ -79,6 +93,10 @@ void main() async {
 
   SharedPreferences preferences = await SharedPreferences.getInstance();
   bool showOnboarding = preferences.getBool('showOnboarding') ?? true;
+  /**
+   *& 'showOnboarding' --> 
+   *? The unique identifier used to store and retrieve a value from SharedPreferences
+   */
   debugPrint("[DEBUG] showOnboarding value: $showOnboarding");
 
   /*
@@ -124,5 +142,9 @@ void main() async {
   &  ------------------------------------------------------------------------- 
   */
 
-  runApp( TechQuizzerApp(showOnboarding: showOnboarding));
+  runApp(
+    TechQuizzerApp(
+      showOnboarding: showOnboarding
+      )
+    );
 }

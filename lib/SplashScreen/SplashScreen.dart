@@ -16,10 +16,17 @@ class SplashScreen extends StatefulWidget {
 class SplashScreenState extends State<SplashScreen> {
 
   late SplashController _splashController;
-
+  
   @override
   void initState() {
-    super.initState();
+    /*
+      * It runs only once when the screen/widget is first created. 
+      * It's the perfect place to:
+      * Initialize variables
+      * Load data
+      * Start animations
+    */
+    super.initState(); //& Required to call the parent class logic first (Flutter's internal setup stuff).
     _splashController = SplashController(showOnboarding: widget.showOnboarding);
     _splashController.checkForOnboarding(context);
   }
